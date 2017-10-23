@@ -1,0 +1,128 @@
+<div class="story">
+<h1></h1>
+<div class="path">file:/C:/Users/Magnua/Desktop/otc-coding-task-master/otc-coding-task-master/build/resources/test/BDDStoryExercise/throne-succession.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">As a</span> king's clerk</div>
+<div class="element asA"><span class="keyword asA">I want to</span> have a tool to ease my work in terms defining throne successor</div>
+<div class="element iWantTo"><span class="keyword iWantTo">So that</span> I won't be beheaded for wrong decision</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Oldest &quot;King's Son&quot; inherits the throne</h2>
+<div class="step successful">Given Royal Family Exists</div>
+<div class="step successful">When  &quot;King's Son&quot; is Alive</div>
+<div class="step successful">And   King Died</div>
+<div class="step successful">Then  Oldest &quot;King's Son&quot; inherits the throne</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Oldest &quot;King's Daughter&quot; inherits the throne</h2>
+<div class="step successful">Given Royal Family Exists</div>
+<div class="step successful">When  King's Son is non existent, illegitimate or dead</div>
+<div class="step successful">And   King's Daughter is Alive</div>
+<div class="step successful">And   King Died</div>
+<div class="step successful">Then  Oldest King's Daughter inherits the throne</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Queen inherits the throne</h2>
+<div class="step successful">Given Royal Family Exists</div>
+<div class="step successful">When  Queen is Alive and have rights to throne</div>
+<div class="step successful">And   King's Son is non existent, illegitimate or dead</div>
+<div class="step successful">And   King's Daughter is non existent, illegitimate or dead</div>
+<div class="step successful">And   King abdicated before death And choose Queen as a next King</div>
+<div class="step successful">Then  Queen inherits the throne</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Royal Dynasty ends due to no succesors</h2>
+<div class="step successful">Given Royal Family Exists</div>
+<div class="step successful">And   There's no other Relatives with rights to throne</div>
+<div class="step successful">When  King's Son is non existent, illegitimate or dead</div>
+<div class="step successful">And   King's Daughter is non existent, illegitimate or dead</div>
+<div class="step successful">And   Queen is Dead</div>
+<div class="step successful">And   King Died</div>
+<div class="step successful">Then  Royal dynasty ends</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Royal Dynasty ends due to all successors being illegitimate and not having rights to throne</h2>
+<div class="step successful">Given Royal Family Exists</div>
+<div class="step successful">And   There's no other Relatives with rights to throne</div>
+<div class="step successful">When  King's Sons are all illegitimate</div>
+<div class="step successful">And   King's Daughter are all illegitimate</div>
+<div class="step successful">And   King Died</div>
+<div class="step successful">Then  Royal dynasty ends</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Test of Royal Succession when King didn't left children</h2>
+<div class="step successful">Given Royal Family Exists</div>
+<div class="step successful">When  King have a Son And a Daughter</div>
+<div class="step successful">And   King's Son have two Sons and a Daughter</div>
+<div class="step successful">And   King Died</div>
+<div class="step successful">Then  Oldest &quot;King's Son&quot; inherits the throne</div>
+<div class="step successful">When  King Died</div>
+<div class="step successful">Then  Second &quot;King's First Son&quot; inherits the throne</div>
+<div class="step successful">When  King Died</div>
+<div class="step successful">Then  Second &quot;King's Second Son&quot; inherits the throne</div>
+<div class="step successful">When  King Died</div>
+<div class="step successful">Then  Oldest King's Daughter inherits the throne</div>
+<div class="step successful">Then  Succession History should show list of King-King-King-Queen</div>
+<div class="step successful">When  King Died</div>
+<div class="step successful">Then  First King's Daughter inherits the throne</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Only legitimate child lost rights to throne</h2>
+<div class="step successful">Given Royal Family Exists</div>
+<div class="step successful">When  King have a Son And a Daughter</div>
+<div class="step successful">And   Royal Son loses rights to throne</div>
+<div class="step successful">And   Royal Daughter loses rights to throne</div>
+<div class="step successful">When  King Died</div>
+<div class="step successful">Then  Royal dynasty ends</div>
+</div>
+<div class="scenario">
+<h2>Scenario: King should be dead on his dying bed, but die after his lifespan ends</h2>
+<div class="step successful">Given Royal Family Exists</div>
+<div class="step successful">When  Last King is at his bed of death</div>
+<div class="step successful">Then  Last King is Alive</div>
+<div class="step successful">When  Last King exceeds his lifespan</div>
+<div class="step successful">Then  Royal dynasty ends</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Test in Game annoucements functionality</h2>
+<div class="step successful">Given Royal Family Exists</div>
+<div class="step successful">Then  Royal Announcement works</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Test Kingdom Time passing functionality</h2>
+<div class="step successful">Given Royal Family Exists</div>
+<div class="step successful">When  100 years passed</div>
+<div class="step successful">Then  Kingdom Time Changed</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Test methods in random scenario</h2>
+<div class="step successful">Given Royal Family Exists</div>
+<div class="step successful">Then  Random User executing methods randomly shouldn't find any errors</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Test each method at least once</h2>
+<div class="step successful">Given Royal Family Exists</div>
+<div class="step successful">Then  Random User is executing all methods once in sequence shouldn't find any errors</div>
+</div>
+<div class="scenario">
+<h2>Scenario: King don't have Heir, but queen is dead. King then marry woman that gave him Heir.</h2>
+<div class="step successful">Given Royal Family Exists</div>
+<div class="step successful">And   King is Alive</div>
+<div class="step successful">And   Queen is Alive</div>
+<div class="step successful">And   There's no other Relatives with rights to throne</div>
+<div class="step successful">When  Queen is Dead</div>
+<div class="step successful">And   Two people are generated as random royal family members</div>
+<div class="step successful">Then  King have one child</div>
+<div class="step successful">And   Queen is Alive</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Princess mary someone, that someone don't have rights to throne by default</h2>
+<div class="step successful">Given Royal Family Exists</div>
+<div class="step successful">When  King's Son is non existent, illegitimate or dead</div>
+<div class="step successful">And   King's Daughter is Alive</div>
+<div class="step successful">And   New Human Fiance is created</div>
+<div class="step successful">And   King's Daughter is married to Fiance</div>
+<div class="step successful">Then  King's Daughter is married</div>
+<div class="step successful">And   King's Daughter Husband do not have rights to throne</div>
+</div>
+</div>

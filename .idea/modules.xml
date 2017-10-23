@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/OtcCodingTask.iml" filepath="$PROJECT_DIR$/.idea/modules/OtcCodingTask.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/OtcCodingTask_main.iml" filepath="$PROJECT_DIR$/.idea/modules/OtcCodingTask_main.iml" group="OtcCodingTask" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/OtcCodingTask_test.iml" filepath="$PROJECT_DIR$/.idea/modules/OtcCodingTask_test.iml" group="OtcCodingTask" />
+    </modules>
+  </component>
+</project>

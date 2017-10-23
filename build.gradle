@@ -1,0 +1,19 @@
+group 'com.ubs.opsit'
+version '2.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility =  1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.slf4j:slf4j-log4j12:1.7.22'
+    runtime 'log4j:log4j:1.2.17'
+    testCompile 'junit:junit:4.12',
+            'org.assertj:assertj-core:3.6.2',
+            'com.google.guava:guava:11.0.2',
+            'org.jbehave:jbehave-core:4.0.4'
+}
